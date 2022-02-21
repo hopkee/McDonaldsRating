@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		358BDB7627C3DB8C00CF45C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BDB7527C3DB8C00CF45C1 /* AppDelegate.swift */; };
 		358BDB7827C3DB8C00CF45C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BDB7727C3DB8C00CF45C1 /* SceneDelegate.swift */; };
-		358BDB7A27C3DB8C00CF45C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BDB7927C3DB8C00CF45C1 /* ViewController.swift */; };
 		358BDB7D27C3DB8C00CF45C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358BDB7B27C3DB8C00CF45C1 /* Main.storyboard */; };
 		358BDB7F27C3DB8D00CF45C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358BDB7E27C3DB8D00CF45C1 /* Assets.xcassets */; };
 		358BDB8227C3DB8D00CF45C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358BDB8027C3DB8D00CF45C1 /* LaunchScreen.storyboard */; };
+		358BDB8B27C3DC5B00CF45C1 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BDB8A27C3DC5B00CF45C1 /* Meal.swift */; };
+		358BDB9127C3DCCE00CF45C1 /* ListOfMealsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BDB9027C3DCCE00CF45C1 /* ListOfMealsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		358BDB7227C3DB8C00CF45C1 /* McDonaldsRatingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = McDonaldsRatingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358BDB7527C3DB8C00CF45C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		358BDB7727C3DB8C00CF45C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		358BDB7927C3DB8C00CF45C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		358BDB7C27C3DB8C00CF45C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		358BDB7E27C3DB8D00CF45C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		358BDB8127C3DB8D00CF45C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		358BDB8327C3DB8D00CF45C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		358BDB8A27C3DC5B00CF45C1 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		358BDB9027C3DCCE00CF45C1 /* ListOfMealsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMealsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		358BDB7427C3DB8C00CF45C1 /* McDonaldsRatingApp */ = {
 			isa = PBXGroup;
 			children = (
-				358BDB7527C3DB8C00CF45C1 /* AppDelegate.swift */,
-				358BDB7727C3DB8C00CF45C1 /* SceneDelegate.swift */,
-				358BDB7927C3DB8C00CF45C1 /* ViewController.swift */,
-				358BDB7B27C3DB8C00CF45C1 /* Main.storyboard */,
-				358BDB7E27C3DB8D00CF45C1 /* Assets.xcassets */,
-				358BDB8027C3DB8D00CF45C1 /* LaunchScreen.storyboard */,
-				358BDB8327C3DB8D00CF45C1 /* Info.plist */,
+				358BDB8D27C3DC7B00CF45C1 /* App */,
+				358BDB8C27C3DC6C00CF45C1 /* Model */,
+				358BDB8F27C3DC8E00CF45C1 /* Controllers */,
+				358BDB8927C3DBFB00CF45C1 /* Views */,
+				35B69A2F27C3DE96000334DE /* Other */,
 			);
 			path = McDonaldsRatingApp;
+			sourceTree = "<group>";
+		};
+		358BDB8927C3DBFB00CF45C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				358BDB7B27C3DB8C00CF45C1 /* Main.storyboard */,
+				358BDB8027C3DB8D00CF45C1 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		358BDB8C27C3DC6C00CF45C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				358BDB8A27C3DC5B00CF45C1 /* Meal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		358BDB8D27C3DC7B00CF45C1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				358BDB7527C3DB8C00CF45C1 /* AppDelegate.swift */,
+				358BDB7727C3DB8C00CF45C1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		358BDB8F27C3DC8E00CF45C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				358BDB9027C3DCCE00CF45C1 /* ListOfMealsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		35B69A2F27C3DE96000334DE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				358BDB7E27C3DB8D00CF45C1 /* Assets.xcassets */,
+				358BDB8327C3DB8D00CF45C1 /* Info.plist */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				358BDB7A27C3DB8C00CF45C1 /* ViewController.swift in Sources */,
+				358BDB8B27C3DC5B00CF45C1 /* Meal.swift in Sources */,
 				358BDB7627C3DB8C00CF45C1 /* AppDelegate.swift in Sources */,
 				358BDB7827C3DB8C00CF45C1 /* SceneDelegate.swift in Sources */,
+				358BDB9127C3DCCE00CF45C1 /* ListOfMealsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +335,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9VBDK94U7E;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = McDonaldsRatingApp/Info.plist;
+				INFOPLIST_FILE = McDonaldsRatingApp/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +351,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,10 +364,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9VBDK94U7E;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = McDonaldsRatingApp/Info.plist;
+				INFOPLIST_FILE = McDonaldsRatingApp/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +380,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
