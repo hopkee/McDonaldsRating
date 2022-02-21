@@ -14,6 +14,13 @@
 		358BDB8227C3DB8D00CF45C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358BDB8027C3DB8D00CF45C1 /* LaunchScreen.storyboard */; };
 		358BDB8B27C3DC5B00CF45C1 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BDB8A27C3DC5B00CF45C1 /* Meal.swift */; };
 		358BDB9127C3DCCE00CF45C1 /* ListOfMealsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BDB9027C3DCCE00CF45C1 /* ListOfMealsVC.swift */; };
+		35B69A3327C3FE93000334DE /* AddNewFeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B69A3227C3FE93000334DE /* AddNewFeedbackVC.swift */; };
+		35B69A3527C3FE9F000334DE /* MealDetailViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B69A3427C3FE9F000334DE /* MealDetailViewVC.swift */; };
+		35B69A3727C3FEAF000334DE /* FeedbacksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B69A3627C3FEAF000334DE /* FeedbacksVC.swift */; };
+		35B69A3927C3FF09000334DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B69A3827C3FF09000334DE /* Constants.swift */; };
+		35B69A3B27C3FF22000334DE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B69A3A27C3FF22000334DE /* DataManager.swift */; };
+		35B69A3F27C43F66000334DE /* ReviewCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B69A3D27C43F66000334DE /* ReviewCellVC.swift */; };
+		35B69A4027C43F67000334DE /* ReviewCellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35B69A3E27C43F66000334DE /* ReviewCellVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		358BDB8327C3DB8D00CF45C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		358BDB8A27C3DC5B00CF45C1 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		358BDB9027C3DCCE00CF45C1 /* ListOfMealsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMealsVC.swift; sourceTree = "<group>"; };
+		35B69A3227C3FE93000334DE /* AddNewFeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFeedbackVC.swift; sourceTree = "<group>"; };
+		35B69A3427C3FE9F000334DE /* MealDetailViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewVC.swift; sourceTree = "<group>"; };
+		35B69A3627C3FEAF000334DE /* FeedbacksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksVC.swift; sourceTree = "<group>"; };
+		35B69A3827C3FF09000334DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		35B69A3A27C3FF22000334DE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		35B69A3D27C43F66000334DE /* ReviewCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellVC.swift; sourceTree = "<group>"; };
+		35B69A3E27C43F66000334DE /* ReviewCellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCellVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 		358BDB7427C3DB8C00CF45C1 /* McDonaldsRatingApp */ = {
 			isa = PBXGroup;
 			children = (
+				35B69A3C27C3FF27000334DE /* Managers */,
 				358BDB8D27C3DC7B00CF45C1 /* App */,
 				358BDB8C27C3DC6C00CF45C1 /* Model */,
 				358BDB8F27C3DC8E00CF45C1 /* Controllers */,
@@ -71,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				358BDB7B27C3DB8C00CF45C1 /* Main.storyboard */,
+				35B69A3E27C43F66000334DE /* ReviewCellVC.xib */,
 				358BDB8027C3DB8D00CF45C1 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -97,6 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				358BDB9027C3DCCE00CF45C1 /* ListOfMealsVC.swift */,
+				35B69A3227C3FE93000334DE /* AddNewFeedbackVC.swift */,
+				35B69A3427C3FE9F000334DE /* MealDetailViewVC.swift */,
+				35B69A3627C3FEAF000334DE /* FeedbacksVC.swift */,
+				35B69A3D27C43F66000334DE /* ReviewCellVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -108,6 +128,15 @@
 				358BDB8327C3DB8D00CF45C1 /* Info.plist */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		35B69A3C27C3FF27000334DE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				35B69A3827C3FF09000334DE /* Constants.swift */,
+				35B69A3A27C3FF22000334DE /* DataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B69A4027C43F67000334DE /* ReviewCellVC.xib in Resources */,
 				358BDB8227C3DB8D00CF45C1 /* LaunchScreen.storyboard in Resources */,
 				358BDB7F27C3DB8D00CF45C1 /* Assets.xcassets in Resources */,
 				358BDB7D27C3DB8C00CF45C1 /* Main.storyboard in Resources */,
@@ -181,10 +211,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B69A3F27C43F66000334DE /* ReviewCellVC.swift in Sources */,
+				35B69A3327C3FE93000334DE /* AddNewFeedbackVC.swift in Sources */,
 				358BDB8B27C3DC5B00CF45C1 /* Meal.swift in Sources */,
 				358BDB7627C3DB8C00CF45C1 /* AppDelegate.swift in Sources */,
 				358BDB7827C3DB8C00CF45C1 /* SceneDelegate.swift in Sources */,
 				358BDB9127C3DCCE00CF45C1 /* ListOfMealsVC.swift in Sources */,
+				35B69A3727C3FEAF000334DE /* FeedbacksVC.swift in Sources */,
+				35B69A3927C3FF09000334DE /* Constants.swift in Sources */,
+				35B69A3B27C3FF22000334DE /* DataManager.swift in Sources */,
+				35B69A3527C3FE9F000334DE /* MealDetailViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

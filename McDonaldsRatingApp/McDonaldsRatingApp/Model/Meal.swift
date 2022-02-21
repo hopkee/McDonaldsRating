@@ -7,23 +7,48 @@
 
 import UIKit
 
-class Meal: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+struct Meal {
+    
+    var name: String
+    var price: Double
+    var image: UIImage?
+    var description: String
+    var weight: Int
+    var calories: Int
+    
+    var feedbacks: [Feedback] = []
+    
+    private var rating: Double? {
+        if feedbacks.isEmpty {
+            return nil
+        } else {
+            var sum: Double = 0
+            for feedback in feedbacks {
+                sum += feedback.mark
+            }
+            return sum / Double(feedbacks.count)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    var ratingBar: String {
+        if let rating = rating {
+            return String(repeating: "⭐", count: Int(rating.rounded(.up))) + "(" + String(feedbacks.count) + ")"
+        } else {
+            return "Нет отзывов"
+        }
     }
-    */
+    
+}
 
+struct Feedback {
+    
+    let authorName: String
+    private let date = Date()
+    let mark: Double
+    let textReview: String
+    let likes: Int?
+    
+    var ratingBar: String {
+        return String(repeating: "⭐", count: Int(mark.rounded(.up)))
+    }
 }
